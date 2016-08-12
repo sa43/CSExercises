@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B7ECB6E-8F20-4FD2-A729-F3081349C400}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSExercises</RootNamespace>
+    <AssemblyName>CSExercises</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSExercises.ExG3</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SectionB\ExB2.cs" />
+    <Compile Include="SectionB\ExB1.cs" />
+    <Compile Include="SectionA\ExA1.cs" />
+    <Compile Include="SectionA\ExA5.cs" />
+    <Compile Include="SectionA\ExA4.cs" />
+    <Compile Include="SectionA\ExA3.cs" />
+    <Compile Include="SectionA\ExA2.cs" />
+    <Compile Include="SectionB\ExB10.cs" />
+    <Compile Include="SectionC\ExC5.cs" />
+    <Compile Include="SectionC\ExC1.cs" />
+    <Compile Include="SectionC\ExC2.cs" />
+    <Compile Include="SectionC\ExC3.cs" />
+    <Compile Include="SectionC\ExC4.cs" />
+    <Compile Include="SectionC\ExC6.cs" />
+    <Compile Include="SectionB\ExB9.cs" />
+    <Compile Include="SectionB\ExB8.cs" />
+    <Compile Include="SectionB\ExB7.cs" />
+    <Compile Include="SectionB\ExB6.cs" />
+    <Compile Include="SectionB\ExB5.cs" />
+    <Compile Include="SectionB\ExB4.cs" />
+    <Compile Include="SectionB\ExB3.cs" />
+    <Compile Include="SectionD\ExD1.cs" />
+    <Compile Include="SectionD\ExD2.cs" />
+    <Compile Include="SectionD\ExD3.cs" />
+    <Compile Include="SectionD\ExD4.cs" />
+    <Compile Include="SectionE\ExE1.cs" />
+    <Compile Include="SectionE\ExE2.cs" />
+    <Compile Include="SectionE\ExE3.cs" />
+    <Compile Include="SectionE\ExE4.cs" />
+    <Compile Include="SectionE\ExE5.cs" />
+    <Compile Include="SectionE\ExE6.cs" />
+    <Compile Include="SectionF\ExF1.cs" />
+    <Compile Include="SectionF\ExF2.cs" />
+    <Compile Include="SectionF\ExF3.cs" />
+    <Compile Include="SectionG\ExG1.cs" />
+    <Compile Include="SectionG\ExG2.cs" />
+    <Compile Include="SectionG\ExG3.cs" />
+    <Compile Include="SectionG\ExG4.cs" />
+    <Compile Include="SectionH\ExH1.cs" />
+    <Compile Include="SectionH\ExH2.cs" />
+    <Compile Include="SectionH\ExH3.cs" />
+    <Compile Include="SectionH\ExH4.cs" />
+    <Compile Include="SectionI\ExI1.cs" />
+    <Compile Include="SectionI\ExI2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

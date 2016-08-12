@@ -1,0 +1,1 @@
+copy ExercisesTest\bin\Debug\ExercisesTest.dll .

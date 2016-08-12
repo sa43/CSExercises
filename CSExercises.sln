@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSExercises", "CSExercises\CSExercises.csproj", "{1B7ECB6E-8F20-4FD2-A729-F3081349C400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesTest", "ExercisesTest\ExercisesTest.csproj", "{4B58B3FC-C254-4153-9431-E3622DA7B69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B7ECB6E-8F20-4FD2-A729-F3081349C400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7ECB6E-8F20-4FD2-A729-F3081349C400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7ECB6E-8F20-4FD2-A729-F3081349C400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7ECB6E-8F20-4FD2-A729-F3081349C400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B58B3FC-C254-4153-9431-E3622DA7B69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B58B3FC-C254-4153-9431-E3622DA7B69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B58B3FC-C254-4153-9431-E3622DA7B69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B58B3FC-C254-4153-9431-E3622DA7B69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
