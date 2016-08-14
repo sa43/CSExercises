@@ -19,13 +19,21 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.Write("Please enter the distance travelled (Kms) :");
+            string stringDistance = Console.ReadLine();
+            double doubleDistance;
+            if (Double.TryParse(stringDistance, out doubleDistance))
+                Console.WriteLine(CalculateFare(doubleDistance));
+            else
+                Console.WriteLine("**Error**");
         }
 
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
-
+            double minFare = 2.40;
+            double farePerKM = 0.40;
+            return minFare + distance * farePerKM;
         }
     }
 }

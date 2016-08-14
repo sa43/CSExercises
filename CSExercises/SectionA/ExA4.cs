@@ -16,12 +16,19 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //PUT YOUR CODE HERE           
+            Console.Write("Please enter the number: ");
+            string input = Console.ReadLine();
+            double num;
+            if (Double.TryParse(input, out num))
+                Console.WriteLine(square(num));
+            else
+                Console.WriteLine("**Error**");
         }
 
         public static double square(double x)
         {
             //PUT YOUR CODE HERE
-            return 0;
+            return Math.Pow(x, 2);
 
         }
     }

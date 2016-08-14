@@ -19,7 +19,8 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Vasanth Kumar Palavarapu");
+            Console.WriteLine("e0046705@u.nus.edu");
         }
     }
 }

@@ -22,6 +22,28 @@ namespace CSExercises
             int age = Convert.ToInt32(Console.ReadLine());
 
             //YOUR CODE HERE
+            string salutation = GetSalutation(gender, age);
+            Console.WriteLine("{0} {1} {2}", "Good Morning", salutation, name);
+        }
+
+        private static string GetSalutation(string gender, int age)
+        {
+            string salutation = string.Empty;
+            if (gender.ToUpper() == "M")
+            {
+                if (age >= 40)
+                    salutation = "Uncle";
+                else
+                    salutation = "Mr.";
+            }
+            else if (gender.ToUpper() == "F")
+            {
+                if (age >= 40)
+                    salutation = "Aunty";
+                else
+                    salutation = "Ms.";
+            }
+            return salutation;
         }
     }
 }
