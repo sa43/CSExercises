@@ -16,6 +16,7 @@ namespace CSExercises
             string gender = Console.ReadLine();
 
             //YOUR CODE HERE
+            Console.WriteLine("{0} {1} {2}", "Good Morning", gender.ToUpper() == "M" ? "Mr." : "Ms.", name);
         }
     }
 }

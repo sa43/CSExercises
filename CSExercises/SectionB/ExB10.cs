@@ -20,13 +20,38 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
-
+            Console.Write("Please enter side A: ");
+            string sideA = Console.ReadLine();
+            Console.Write("Please enter side B: ");
+            string sideB = Console.ReadLine();
+            Console.Write("Please enter side C: ");
+            string sideC = Console.ReadLine();
+            double doubleA, doubleB, doubleC;
+            if ((double.TryParse(sideA, out doubleA) && double.TryParse(sideB, out doubleB) && double.TryParse(sideC, out doubleC))
+                && CheckSideRule(doubleA, doubleB, doubleC))
+            {
+                Console.WriteLine(CalculateArea(doubleA, doubleB, doubleC));
+            }
+            else
+                Console.WriteLine("NaN");
         }
 
         public static double CalculateArea(double a, double b, double c)
         {
             //YOUR CODE HERE
-            return 0;
+            double area;
+            double semiperimeter = (a + b + c) / 2;
+            area = Math.Sqrt(semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c));
+            return area;
+        }
+
+        public static bool CheckSideRule(double a, double b, double c)
+        {
+            bool result = false;
+            double semiperimeter = (a + b + c) / 2;
+            if (semiperimeter >= a && semiperimeter >= b && semiperimeter >= c)
+                result = true;
+            return result;
         }
     }
 }

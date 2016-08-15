@@ -20,11 +20,14 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Please enter the number: ");
             string inputStr = Console.ReadLine();
-            double inputDbl = Convert.ToDouble(inputStr);
-
+            double inputDbl;
             //YOUR CODE HERE
-
+            if (double.TryParse(inputStr, out inputDbl))
+                Console.WriteLine("{0:0.00}",inputDbl);
+            else
+                Console.WriteLine("**Error**");
         }
 
     }

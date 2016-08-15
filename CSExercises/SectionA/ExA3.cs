@@ -14,18 +14,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Please enter the integer number: ");
             string inputString = Console.ReadLine();
-            int inputInt = Convert.ToInt32(inputString);
+            int inputInt;
+            if (int.TryParse(inputString, out inputInt))
+                Console.WriteLine(square(inputInt));
+            else
+                Console.WriteLine("**Error**");
 
-            int result = square(inputInt);
-
-            Console.WriteLine(result);
         }
 
         public static int square(int x)
         {
             //PUT YOUR CODE HERE
-            return 0;
+            return x * x;
 
         }
     }

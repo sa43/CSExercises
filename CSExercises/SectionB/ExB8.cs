@@ -16,13 +16,27 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.Write("Please enter the distance travelled (Kms) :");
+            string stringDistance = Console.ReadLine();
+            double doubleDistance;
+            if (Double.TryParse(stringDistance, out doubleDistance))
+                Console.WriteLine(RoundTo10(CalculateFare(doubleDistance)));
+            else
+                Console.WriteLine("**Error**");
         }
 
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
-
+            double minFare = 2.40;
+            double farePerKM = 0.40;
+            return minFare + distance * farePerKM;
         }
+
+        public static double RoundTo10(double number)
+        {
+            return Math.Round(number, 1);
+        }
+
     }
 }
